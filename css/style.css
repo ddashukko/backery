@@ -4,11 +4,41 @@
   --color-primary-light: #faf4ea;
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
+  --color-skin: #a18268;
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
 body {
   color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -22,6 +52,8 @@ ul {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -37,15 +69,26 @@ ul {
 /* Link */
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
+  line-height: 1.5;
 }
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* Hero section */
+
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
   color: var(--color-primary-light);
+  margin-bottom: 0;
+  font-size: 128px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .hero-title .accent {
@@ -57,12 +100,105 @@ ul {
   color: var(--color-primary-light);
   background-color: var(--color-brand-light);
 }
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
 
 /* Sections */
+.section {
+  padding: 48px 0;
+}
+
 .section-title {
   color: var(--color-primary-dark);
+  font-size: 64px;
+  font-size: 900;
+  line-height: 1.3;
 }
 
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/* Tradition sections */
+
+.traditions-text .accent-uppercase {
+  color: var(--color-brand-light);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.traditions-text .accent {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+/* Chef section */
+
+.chef-title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.chefs-title {
+  margin-bottom: 80px;
+}
+
+/* Tradition section */
+
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+/* Format section */
+.format-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.formats-title {
+  margin-bottom: 80px;
+}
+
+.format-text {
+  font-weight: 300;
+  font-size: 14;
+}
+
+/* contact section */
+.adress-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.adress-link:hover {
+  color: var(--color-brand-light);
+}
+
+.contacts-title {
+  margin-bottom: 16px;
+}
+
+/* Confidention */
+.confident {
+  color: var(--color-skin);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Hidden class */
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
